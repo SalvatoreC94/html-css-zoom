@@ -9,3 +9,31 @@
 Body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* header */
+
+header {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button-header {
+    background-color: #4a4a4a;
+    border-radius: 5px;
+
+}
+
+/* Main */
+
+
+
+
+
+
+
+
+/* Footer */
