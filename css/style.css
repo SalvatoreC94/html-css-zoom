@@ -5,14 +5,29 @@
     box-sizing: border-box;
 }
 
-/* General */
-Body {
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+    color: white;
 }
 
+/* COMMON */
+.button {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
 
-/* header */
+button {
+    padding: 5px;
+    border: none;
+    color: inherit;
+    background-color: inherit;
+}
 
+/* HEADER */
 header {
     height: 50px;
     display: flex;
@@ -21,22 +36,57 @@ header {
     align-items: center;
 }
 
-.button-header {
+.b-header {
     background-color: #4a4a4a;
     border-radius: 5px;
-
+    transition: all 0.3s;
 }
 
-/* Main */
+button:hover {
+    cursor: pointer;
+    background-color: #292929;
+}
 
+/* MAIN */
+main {
+    padding: 20px 0;
+    height: calc(100vh - 130px);
+    overflow-y: scroll;
+}
 
+.grid {
+    max-width: 1700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
 
+.user {
+    position: relative;
+    width: 200px;
+}
 
+.user img {
+    width: 100%;
+    display: block;
+}
 
+.user .name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    background-color: rgba(74, 74, 74, 0.494);
+}
 
-
-
-/* Footer */
+/* FOOTER */
 footer {
     height: 80px;
     background-color: #222222;
@@ -73,6 +123,9 @@ footer .fa-solid {
     font-size: 22px;
 }
 
+.fa-solid.fa-chevron-up {
+    font-size: 14px;
+}
 
 .fa-share-from-square {
     color: green;
